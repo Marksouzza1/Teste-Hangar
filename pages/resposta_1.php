@@ -1,6 +1,6 @@
 <?php
 
-require_once 'conexao.php';
+require_once '../includes/conexao.php';
 
 try {
     $sql = "SELECT strftime('%Y-%m-%d', order_date) as dia, SUM(order_total) as total_pedidos 
@@ -39,7 +39,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de Pedidos</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="../assets/Style.css"> 
 </head>
 <body>
     <div class="table_box">
